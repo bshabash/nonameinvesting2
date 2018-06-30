@@ -1,0 +1,55 @@
+#nav-container {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    //background-color: blue;   
+    //background-image: url("bgGrad2.png");
+    //background-image: url("bg.jpg");
+    //background-size: cover;
+    background: blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, blue , black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, blue, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, blue, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, blue , black); /* Standard syntax */
+    border-radius: 15px;
+}
+
+
+/*.nav li.first{
+  border-top-left-radius:15px;
+  border-bottom-left-radius:15px;
+}
+
+.nav li.last{
+  border-top-right-radius:15px;
+  border-bottom-right-radius:15px;
+}*/
+
+.nav li {
+    float: left;
+    border-right: 1px solid #bbb;    
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}

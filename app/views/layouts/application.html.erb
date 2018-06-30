@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Omega26</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render "layouts/navbar" %>
+
+<%= yield %>
+
+  <div style="text-align: center; font-size: 80%; padding-left: 10%; padding-right: 10%">
+  <p>Disclaimer:</p>
+  <p>&Omega;-26 does not provide personal investment or financial advice to 
+  individuals, or act as personal financial, legal, or institutional 
+  investment advisors, or individually advocate the purchase or sale of 
+  any security or investment or the use of any particular 
+  financial strategy. All investing, stock forecasts and investment 
+  strategies include the risk of loss for some or even all of your capital. 
+  Before pursuing any financial strategies discussed on this website, 
+  you should always consult with a licensed financial advisor.</p>
+  </div>
+  <div style="text-align: center">
+    &copy; 2016 Boris Shabash
+  </div>
+</body>
+</html>

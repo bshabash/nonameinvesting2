@@ -1,0 +1,31 @@
+<div class="main" id="indexPageDiv">
+  <div class="container">
+    <h1>
+     Today's Predictions by the &Omega;-26 Algorithm
+    </h1>
+    <table style="width:70%; font-size: 150%">
+      <tr>
+        <th>Stock</th>
+        <th>Buy price (if not holding)</th>
+        <th>Sell price (if holding)</th>
+      </tr>
+      <% colourVar = 0 %>
+      <% @myText.each do |row| %>
+      <% if (colourVar == 0)
+          colourVar = 1
+          styleString = 'background-color: #9999ff'
+         else
+          colourVar = 0
+          styleString = 'background-color: #fff'
+         end
+        %>
+
+      <tr style="<%= styleString %>">
+        <td><%= row[0] %></td>
+        <td>$<%= row[1]%></td>
+        <td>$<%= row[2]%></td>
+      </tr>
+      <% end %>
+    </table>	
+  </div>
+</div>
